@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="MediatR" Version="14.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.28" />
+    <PackageReference Include="Serilog" Version="4.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PrimeStore.data\PrimeStore.data.csproj" />
+    <ProjectReference Include="..\PrimeStore.service\PrimeStore.service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Authenication\Commands\Results\" />
+    <Folder Include="Features\Authenication\Queries\" />
+    <Folder Include="Features\Authorization\Queries\Validators\" />
+    <Folder Include="Features\Images\Commands\Validators\" />
+    <Folder Include="Features\Images\Queries\Validators\" />
+    <Folder Include="Features\Cart\Commands\Validators\" />
+    <Folder Include="Features\Cart\Queries\Validators\" />
+    <Folder Include="Features\Payments\Commands\Validators\" />
+    <Folder Include="Features\Payments\Queries\Validators\" />
+    <Folder Include="Features\Order\Commands\Validators\" />
+    <Folder Include="Features\Order\Queries\Validators\" />
+    <Folder Include="Features\Users\Queries\Validators\" />
+    <Folder Include="Features\template - Copy\Commands\Handlers\" />
+    <Folder Include="Features\template - Copy\Commands\Models\" />
+    <Folder Include="Features\template - Copy\Commands\Validators\" />
+    <Folder Include="Features\template - Copy\Queries\Handlers\" />
+    <Folder Include="Features\template - Copy\Queries\Models\" />
+    <Folder Include="Features\template - Copy\Queries\Validators\" />
+    <Folder Include="Features\Categories\Queries\Validators\" />
+    <Folder Include="Features\Brands\Queries\Validators\" />
+  </ItemGroup>
+
+</Project>
